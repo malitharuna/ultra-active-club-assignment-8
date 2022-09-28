@@ -1,0 +1,10 @@
+.single-activity{
+    border: 1px solid cyan;
+    background-color: white;
+}
+.single-activity img{
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
