@@ -5,6 +5,16 @@
 .single-activity img{
     height: 100px;
     width: 200px;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
+}
+.single-activity button{
+    background-color: rgb(238, 206, 66);
+    border: none;
+    display: block;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.single-activity button:hover{
+    background-color: darkgoldenrod;
 }

@@ -8,7 +8,7 @@ const Activity = ({activity}) => {
             <img src={img} alt="" />
             <h3>Name: {name}</h3>
             <p>Time required : {time}</p>
-            <button></button>
+            <button>Add To details</button>
         </div>
     );
 };
