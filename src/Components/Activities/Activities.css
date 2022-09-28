@@ -1,9 +1,18 @@
 .main{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin: 40px;
+}
+.header{
+    display: flex;
+    justify-content: cente;
+    align-items: center;
+}
+.title{
+    margin: 15px;
 }
 .activity{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
