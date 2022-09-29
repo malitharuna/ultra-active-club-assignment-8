@@ -7,7 +7,7 @@ import DetailsActivity from '../DetailsActivity/DetailsActivity';
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
-    // const [activity, setActivity] = useState({});
+    const [cart, setCart] = useState([]);
 
     useEffect(()=>{
         fetch(`activities.json`)
@@ -16,8 +16,9 @@ const Activities = () => {
     },[])
 
     const handleToDetail = (activity) =>{
-         console.log(activity);
-        // setActivities(activities) ;    
+        //  console.log(activity);
+        const newCart = [...cart, activity]
+        setCart(newCart);    
     }
     return (
         <div className='main'>
@@ -26,7 +27,9 @@ const Activities = () => {
                     <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
                     <h1 className='title'>My-Daily-Activities</h1>
                 </div>
+                <div><h3>Select Today's Work</h3></div>
                 <div className='activity'>
+                
                 {
                     activities.map(activity => <Activity
                     key={activity.id}
@@ -51,7 +54,7 @@ const Activities = () => {
                         Age: 25 years
                     </span>
                 </div>
-                <DetailsActivity activities={activities} > </DetailsActivity>
+                <DetailsActivity cart={cart} > </DetailsActivity>
             </div>
         </div>
     );

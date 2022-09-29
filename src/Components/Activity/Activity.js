@@ -6,9 +6,13 @@ const Activity = (props) => {
     const {img, time, name} = activity;
     return (
         <div className='single-activity'>
-            <img src={img} alt="" />
-            <h3>Name: {name}</h3>
-            <p>Time required : {time}</p>
+            <div>
+                <img src={img} alt="" />
+                <div className='sa-head'>
+                <h3>{name}</h3>
+                <p>Time required : {time}</p>
+                </div>
+            </div>
             <button onClick={()=>handleToDetail(activity)} >Add To details</button>
         </div>
     );
