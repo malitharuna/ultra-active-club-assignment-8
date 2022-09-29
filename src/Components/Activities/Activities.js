@@ -7,6 +7,7 @@ import DetailsActivity from '../DetailsActivity/DetailsActivity';
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
+    // const [activity, setActivity] = useState({});
 
     useEffect(()=>{
         fetch(`activities.json`)
@@ -14,8 +15,9 @@ const Activities = () => {
         .then(data => setActivities(data))
     },[])
 
-    const handleToDetail=(activity)=>{
-        console.log(activity);      
+    const handleToDetail = (activity) =>{
+         console.log(activity);
+        // setActivities(activities) ;    
     }
     return (
         <div className='main'>
@@ -49,7 +51,7 @@ const Activities = () => {
                         Age: 25 years
                     </span>
                 </div>
-                <DetailsActivity > </DetailsActivity>
+                <DetailsActivity activities={activities} > </DetailsActivity>
             </div>
         </div>
     );
