@@ -21,6 +21,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
+.bio{
+    font-weight: bold;
+}
+.name{
+    display: flex;
+    margin-bottom: ;
+}
+.bio img{
+    width: 80px;
+}
 
 @media only screen and (max-368) {
    .activity{

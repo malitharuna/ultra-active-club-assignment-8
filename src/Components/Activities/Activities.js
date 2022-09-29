@@ -39,10 +39,14 @@ const Activities = () => {
                 }
                 </div>
             </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNg818gFernAq_PQHzux1LO09RSu_IOMzkclfzp8yfAg3ZHKxW-6PdG8J9p2hnj_Ebs9Y&usqp=CAU" alt="" />
-                <p>My Name: Malitha Runa</p>
-                <p>Profession: Web-Developer</p>
+            <div className='bio'>
+                <div className='name'>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNg818gFernAq_PQHzux1LO09RSu_IOMzkclfzp8yfAg3ZHKxW-6PdG8J9p2hnj_Ebs9Y&usqp=CAU" alt="" />
+                    <div>
+                        <h3>My Name: Malitha Runa</h3>
+                        <p>Profession: Web-Developer</p>
+                    </div>
+                </div>
                 <div>
                     <span>
                         Weight:55kg
