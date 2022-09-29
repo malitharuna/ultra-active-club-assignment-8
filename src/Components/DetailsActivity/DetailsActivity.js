@@ -8,16 +8,16 @@ const DetailsActivity = (props) => {
     const [breakTime, setBreakTime] = useState("");
 
     useEffect(()=>{
-      const storedCart = handleBreakTime(breakTime); 
-      console.log(storedCart);
+       handleBreakTime(breakTime); 
+      const getTime = localStorage.getItem('break-time');
+      setBreakTime(getTime);
   
     },[breakTime]);
 
     const handleBreakTime = breakTime => {
         setBreakTime(breakTime);
         localStorage.setItem('break-time', breakTime );
-        const storedCart = localStorage.getItem('break-time');
-        return storedCart;
+        
     };
 
     let totalTime = 0;
