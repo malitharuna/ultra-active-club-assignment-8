@@ -35,6 +35,10 @@
 .bio img{
     width: 80px;
 }
+span{
+    /* display: block; */
+    margin: 7px
+}
 
  @media (max-width: 576px) { 
     .main{

@@ -47,14 +47,14 @@ const Activities = () => {
                         <p>Profession: Web-Developer</p>
                     </div>
                 </div>
-                <div>
-                    <span>
+                <div >
+                    <span className='my-detail'>
                         Weight:55kg
                     </span>
-                    <span>
+                    <span className='my-detail'>
                         Height: 5.5
-                    </span>
-                    <span>
+                    </span >
+                    <span className='my-detail'>
                         Age: 25 years
                     </span>
                 </div>
