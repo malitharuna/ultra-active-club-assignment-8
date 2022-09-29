@@ -26,14 +26,30 @@
 }
 .name{
     display: flex;
-    margin-bottom: ;
+    margin: 10px;
+ 
+}
+.name img{
+    margin-right: 10px;
 }
 .bio img{
     width: 80px;
 }
 
-@media only screen and (max-368) {
-   .activity{
-    grid-template-columns: 1fr  1fr;
-   } 
-}
+ @media (max-width: 576px) { 
+    .main{
+        grid-template-columns:1fr;
+        
+    }
+    .activity{
+        grid-template-columns:1fr;
+       } 
+ } 
+
+ @media (min-width: 577px) and (max-width: 991px) {
+    .activity{
+        grid-template-columns:1fr 1fr;
+       } 
+ }
+
+

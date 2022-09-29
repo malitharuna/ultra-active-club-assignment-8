@@ -11,13 +11,11 @@ const DetailsActivity = (props) => {
        handleBreakTime(breakTime); 
       const getTime = localStorage.getItem('break-time');
       setBreakTime(getTime);
-  
-    },[breakTime]);
+    },[]);
 
     const handleBreakTime = breakTime => {
         setBreakTime(breakTime);
-        localStorage.setItem('break-time', breakTime );
-        
+        localStorage.setItem('break-time', breakTime );   
     };
 
     let totalTime = 0;
@@ -36,7 +34,6 @@ const DetailsActivity = (props) => {
             </div>
             <div>
                 <h3>Exercise Details</h3>
-                <p>Cart Item: {cart.length}</p>
                 <p>Exercise Time: {totalTime} hours</p>
                 <p>Break Time: {breakTime} </p>
             </div>
